@@ -1,0 +1,18 @@
+{
+  // Отключение AI автодополнения в Cursor
+  "editor.inlineSuggest.enabled": false,
+  // Отключение быстрых предложений
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  // Отключение предложений при вводе символов
+  "editor.suggestOnTriggerCharacters": false,
+  // Отключение автодополнения при Tab
+  "editor.tabCompletion": "off",
+  // Отключение автоматического принятия предложений
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off"
+}
+
