@@ -51,7 +51,7 @@ function createComponent(id) {
   // Компонент "уничтожен", но обработчик остался
   return {
     destroy: () => {
-      // TODO: Что здесь не так?
+      // TODO: Что здесь не так? Emitter нельзя переопределить так как выше он был через const объявлен
       emitter = null;
     }
   };
@@ -71,6 +71,7 @@ function createValidators(rules) {
     validators.push({
       validate: (value) => {
         // TODO: В чём проблема?
+        // i через var объявлен
         return rules[i].test(value);
       },
       name: rules[i].name

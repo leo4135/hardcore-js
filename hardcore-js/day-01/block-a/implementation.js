@@ -34,8 +34,9 @@
  */
 
 // TODO: Реализуй memoize (imperative подход)
+// не понимаю как она может вернуть функцию с тем же api, если у меня нет доступа к сигнатуре функции, которая будет лететь на вход
 function memoize(fn) {
-  // Твой код здесь
+  let count = 0;
 }
 
 // TODO: Реализуй memoize (functional подход с использованием Map)
@@ -79,6 +80,9 @@ function memoizeWithLimit(fn, limit = 10) {
  * store.clear();
  * console.log(store.get('name')); // undefined
  */
+
+
+// понятия не имею как это сделать. Мне нужна мат часть и плавное введение в такие задачи
 
 // TODO: Реализуй createPrivateStore (базовый вариант)
 function createPrivateStore() {
