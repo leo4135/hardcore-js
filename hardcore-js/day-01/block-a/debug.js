@@ -51,8 +51,9 @@ function createComponent(id) {
   // Компонент "уничтожен", но обработчик остался
   return {
     destroy: () => {
-      // TODO: Что здесь не так? Emitter нельзя переопределить так как выше он был через const объявлен
-      emitter = null;
+      // TODO: Что здесь не так?
+      // Emitter нельзя переопределить так как выше он был через const объявлен
+      emitter.off('click');
     }
   };
 }
@@ -93,6 +94,7 @@ const validators = createValidators(rules);
 // validators[0].validate('test');
 // validators[1].validate('test');
 // validators[2].validate('test');
+// Вызовется три раза третий объект { test: (v) => !v.includes(' '), name: 'noSpaces' }
 
 // TODO: Исправь код
 
